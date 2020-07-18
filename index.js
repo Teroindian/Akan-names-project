@@ -14,3 +14,6 @@ if(century==""){
 }else if (day>31){
     alert("Incorrect Day")
 }
+function calculateDay(){
+    dayOfWeek = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
+}
