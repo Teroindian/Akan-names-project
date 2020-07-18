@@ -15,5 +15,11 @@ if(century==""){
     alert("Incorrect Day")
 }
 function calculateDay(){
-    dayOfWeek = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
+    getInput();
+    dayOfWeek = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % console.log(dayOfWeek);
+    return(dayOfWeek);
+}
+var checkdayOfWeek
+function checkdayOfWeek(){
+    day= calculateDay();
 }
