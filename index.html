@@ -27,12 +27,18 @@
                 <label for="Day">Day</label>
                 <input type="number" placeholder="Enter the day of the month which you were born" class="form-control" id="Day">
             </div>
+            <div class="row">
+                <div class="col md-6">
             <input type="checkbox" id="Gender" name="Gender1" value="Male">
             <label for="Gender1"> Male</label><br>
             <input type="checkbox" id="Gender" name="Gender2" value="Female">
             <label for="Gender2"> Female</label><br>
+            </div>
+            <div class="col md-6">
             <div id="result" class="text-centre">
                 <button type="button" name="button" class="btn btn-primary" onclick="checkDayOfWeek();">Calculate Day Of Birth</button>
+                </div>
+                </div>
             </div>
         </div>
         <script src="index.js"></script>
