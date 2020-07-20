@@ -29,14 +29,16 @@
             </div>
             <div class="row">
                 <div class="col md-6">
-            <input type="checkbox" id="gender" name="gender1" value="Male">
-            <label for="gender1"> Male</label><br>
-            <input type="checkbox" id="gender" name="gender2" value="Female">
-            <label for="gender2"> Female</label><br>
+                    <div id="genders">
+                    <form class="radio-button">
+                        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+                        <input type="radio" class="genders labels" value="female" id="rad2" name="rads" required>Female
+                      </form>
+                      </div>
             </div>
-            <div class="col md-6">
+         <div class="col md-6">
             <div id="result" class="text-centre">
-                <button type="button" name="button" class="btn btn-primary" onclick="checkDayOfWeek();">Calculate Day Of Birth</button>
+                <button type="submit" name="button" class="btn btn-primary" onclick="checkDayOfWeek();">Calculate Day Of Birth</button>
                 </div>
                 </div>
             </div>
